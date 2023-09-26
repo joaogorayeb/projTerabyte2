@@ -1,0 +1,101 @@
+body{
+    background-color: #ebebeb;
+}
+.h2-pc-para-todos{
+    font-size: 1em;
+    margin-bottom: 5vh;
+}
+.div-pc-para-todos{
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+.img-pc-para-todos{
+    width: 60%;
+    height: 83%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-pc-para-todos span{
+    position: absolute;
+    top: 100%;
+    font-weight: bold;
+}
+.div-home-office{
+    background-image: url(../img/home--office.png);
+}
+.div-pc-gamer{
+    background-image: url(../img/pc--gamer.png);
+}
+.div-imgs-depart{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5vw; */
+}
+.div-img-depart{
+    background-color: #fff;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 2em;
+    border-right: 4px #ebebeb solid;
+    border-top: 1em #fff solid;
+    border-bottom: 1em #fff solid;
+}
+.div-img-depart span{
+    position: absolute;
+    top: 110%;
+}
+.img-1-depart{
+    background-image: url(../img/kit-upgrade.png);
+}
+.img-2-depart{
+    background-image: url(../img/pc-gamer.png);
+}
+.img-3-depart{
+    background-image: url(../img/hardware.jpg);
+}
+.img-4-depart{
+    background-image: url(../img/--perifericos.png);
+}
+.img-5-depart{
+    background-image: url(../img/gabinetes.png);
+}
+.img-6-depart{
+    background-image: url(../img/-refrigeracao.png);
+}
+
+
+
+
+
+
+
+
+
+
+ 
+@media(max-width: 1024px){
+    main{
+        margin: 5vw 10vw; 
+    }
+    .img-pc-para-todos{
+        width: 45%;
+        height: 54%;
+    }
+}
+
+@media(min-width: 1024px){
+    main{
+        margin: 3vw 20vw; 
+    }
+}
