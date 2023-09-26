@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10x;
+    background-color: black;
+    color: #fff;
+}
+.accounts{
+    font-size: 0.7em;
+    font-weight: bold;
+    display: flex;
+}
+.a-accounts{
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+}
+.a-sm{
+    color: #fff;
+    text-decoration: none;  
+}
+.p-account{
+    padding: 0 1em;
+}
+.fa-brands{
+    font-size: 0.8em;
+    padding: 0 0.6em;
+}
+header{
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10vw;
+}
+.fa-bars{
+    height: 100%;
+    margin: auto 0;
+    font-size: 2em;
+}
+.logo{
+    width: 140.2px;
+    height: 65px;
+    background-image: url(../img/terabyte-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.div-input-header{
+    width: 50%;
+    background-color: white;
+    height: 45px;
+    margin: auto 0;
+    color: #222;
+    border-radius: 10px;
+    display: inline-flex;
+}
+.input-header{
+    height: 100%;
+    width: 93%;
+    border-radius: 10px;
+    padding-left: 0.8em;
+    border: none;
+    font-size: 1.2em;
+    outline: none;
+}
+.icon-search{
+    margin: auto;
+
+}
+.entre{
+    margin: auto 0;;
+}
+.login{
+    text-align: center;
+    font-size: .8em;
+}
+.fa-cart-shopping{
+    margin: auto 0;
+    font-size: 1.2em;
+}
+.div-slider{
+    background-image: url(../img/2459.jpg);
+    height: 14vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
