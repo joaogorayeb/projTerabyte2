@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+input{
+    margin: 2vh;
+}
+.btn{
+    width: 100px;
+}
+th{
+    font-weight: normal;
+}

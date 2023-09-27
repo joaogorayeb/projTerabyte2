@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <script src="js/funcoesGlobais.js" defer></script>
+    <title>Cadastrar Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form enctype="multipart/form-data">
+        <input type="file" name="img" id="img" class="form-control">
+        <input type="text" name="nome" id="nome" placeholder="Nome do Produto..." class="form-control">
+        <input type="text" name="descricao" id="descricao" placeholder="Descrição do Produto..." class="form-control">
+        <input type="text" name="preco" id="preco" placeholder="Preço do Produto..." class="form-control">
+
+        <input type="submit" id="cadastrar" value="Cadastrar" class="btn btn-primary">
+        <input type="reset" id="alterar" value="Alterar" class="btn btn-warning visually-hidden">
+        <input type="reset" id="remover" value="Remover" class="btn btn-danger visually-hidden">
+        <input type="reset" id="cancelar" value="Cancelar" class="btn btn-secondary visually-hidden">
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Selecionar</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
