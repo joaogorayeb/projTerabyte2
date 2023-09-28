@@ -1,5 +1,6 @@
 package br.com.back.modelo;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,7 +12,6 @@ import lombok.Data;
 @Entity
 @Table(name = "produtos")
 @Data
-
 public class ProdutoModelo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +20,7 @@ public class ProdutoModelo {
     private String descricao;
     
     @Lob
+    @Column(columnDefinition = "LONGBLOB")
     private byte[] img;
     private Double preco;
 }

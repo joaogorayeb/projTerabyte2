@@ -28,6 +28,7 @@ public class ProdutoControle {
     public Iterable<ProdutoModelo> listar(){
         return produtoDAO.findAll();
     }
+
     @PostMapping
     public ResponseEntity<ProdutoModelo> cadastrar(@RequestParam("img") MultipartFile img, @RequestParam("nome") String nome, @RequestParam("descricao") String descricao, @RequestParam("preco") Double preco){
         try {
@@ -43,10 +44,12 @@ public class ProdutoControle {
             return null;
         }
     }
+
     @PutMapping
     public ResponseEntity<ProdutoModelo> alterar(@RequestBody ProdutoModelo produtoModelo){
         return new ResponseEntity<ProdutoModelo>(produtoDAO.save(produtoModelo), HttpStatus.ACCEPTED);
     }
+    
     @DeleteMapping
     public void remover(@PathVariable Integer id){
         produtoDAO.deleteById(id);
