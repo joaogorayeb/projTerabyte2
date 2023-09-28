@@ -1,8 +1,8 @@
-// btnCancelar.addEventListener('click', function(){
-//     limparCampos();
-//     hidden = true;
-//     btnHidden();
-// });
+btnCancelar.addEventListener('click', function(){
+    limparCampos();
+    hidden = true;
+    btnHidden();
+});
 function limparCampos(){
     inputId.value = "";
     inputImg.value = "";
