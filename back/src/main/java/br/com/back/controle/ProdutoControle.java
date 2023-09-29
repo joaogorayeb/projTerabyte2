@@ -30,14 +30,14 @@ public class ProdutoControle {
     }
 
     @PostMapping
-    public ResponseEntity<ProdutoModelo> cadastrar(@RequestParam("img") MultipartFile img, @RequestParam("nome") String nome, @RequestParam("descricao") String descricao, @RequestParam("preco") Double preco){
+    public ResponseEntity<ProdutoModelo> cadastrar(@RequestParam("img") MultipartFile img, @RequestParam("descricao") String descricao, @RequestParam("preco") Double preco, @RequestParam("tipo") Integer tipo){
         try {
             byte[] imgByte = img.getBytes();
             ProdutoModelo modelo = new ProdutoModelo();
-            modelo.setNome(nome);
             modelo.setImg(imgByte);
             modelo.setDescricao(descricao);
             modelo.setPreco(preco);
+            modelo.setTipo(tipo);
             return new ResponseEntity<ProdutoModelo>(produtoDAO.save(modelo), HttpStatus.CREATED);
         } catch (Exception e) {
             // TODO: handle exception

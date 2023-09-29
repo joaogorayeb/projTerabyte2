@@ -6,9 +6,9 @@ btnCancelar.addEventListener('click', function(){
 function limparCampos(){
     inputId.value = "";
     inputImg.value = "";
-    inputNome.value = "";
     inputDescricao.value = "";
     inputPreco.value = "";
+    inputTipo.value = "";
 }
 function btnHidden(){
     if(hidden){
@@ -19,7 +19,7 @@ function btnHidden(){
     }
 }
 function alerta(){
-    if(inputImg.value.trim() === '' || inputNome.value.trim() === '' || inputDescricao.value.trim() === '' || inputPreco.value.trim() === ''){
+    if(inputImg.files.length === 0 || inputDescricao.value.trim() === '' || inputPreco.value.trim() === '' ){
         alert("Todos os campos devem ser preenchidos!");
         return true;
     }

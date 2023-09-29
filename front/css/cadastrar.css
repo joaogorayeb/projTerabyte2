@@ -16,9 +16,24 @@ h1{
 input{
     margin: 2vh;
 }
+
 .btn{
     width: 100px;
 }
+
 th{
     font-weight: normal;
+}
+.col-img{
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+td{
+    vertical-align: middle;
+}
+.radio{
+    
 }

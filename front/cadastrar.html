@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="css/cadastrar.css">
     <script src="js/variaveis.js" defer></script>
     <script src="js/funcoesGlobais.js" defer></script>
-    <script src="js/listar.js" defer></script>
     <script src="js/selecionar.js" defer></script>
+    <script src="js/listar.js" defer></script>
     <script src="js/cadastrar.js" defer></script>
+    <script src="js/alterar.js" defer></script>
     <title>Cadastrar Produtos</title>
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>
-    <form id="form" enctype="multipart/form-data">
+    <form enctype="multipart/form-data">
+        <input type="id" id="id" class="visually-hidden">
         <input type="file" id="img" name="img" class="form-control">
-        <input type="text" id="nome" name="nome" placeholder="Nome do Produto..." class="form-control">
         <input type="text" id="descricao" name="descricao" placeholder="Descrição do Produto..." class="form-control">
         <input type="text" id="preco" name="preco" placeholder="Preço do Produto..." class="form-control">
+        
+        <div class="radio">
+            <input type="radio" value="1" id="mais" name="tipo">
+            <label for="mais-vendidos" id="mais-vendidos">Mais vendidos</label>
+            <input type="radio" id="lan" value="2" name="tipo">
+            <label for="lancamentos" id="lancamentos">Lançamentos</label>
+        </div>
 
         <input type="submit" id="cadastrar" value="Cadastrar" class="btn btn-primary">
-        <input type="reset" id="alterar" value="Alterar" class="btn btn-warning visually-hidden">
-        <input type="reset" id="remover" value="Remover" class="btn btn-danger visually-hidden">
-        <input type="reset" id="cancelar" value="Cancelar" class="btn btn-secondary visually-hidden">
+        <input type="button" id="alterar" value="Alterar" class="btn btn-warning visually-hidden">
+        <input type="button" id="remover" value="Remover" class="btn btn-danger visually-hidden">
+        <input type="button" id="cancelar" value="Cancelar" class="btn btn-secondary visually-hidden">
     </form>
 
     <table class="table">
@@ -31,9 +39,9 @@
             <tr>
                 <th>#</th>
                 <th>Imagem</th>
-                <th>Nome</th>
                 <th>Descrição</th>
                 <th>Preço</th>
+                <th>Tipo</th>
                 <th>Selecionar</th>
             </tr>
         </thead>
