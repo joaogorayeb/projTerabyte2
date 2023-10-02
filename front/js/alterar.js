@@ -10,12 +10,12 @@ btnAlterar.addEventListener('click', function(e){
                 "img":"inputImg.value",
                 "descricao":"inputDescricao.value",
                 "preco":"inputPreco.value",
-                "tipo":"inputTipo.value",
+                "tipo":"inputTipo.value"
             })
         })
         .then(resposta => resposta.json())
         .then(produto => alterarProduto(produto))
         .catch(erro => console.log("Ocorreu um erro!" + erro));
     }
-    limparCampos();
+    form.reset();
 });

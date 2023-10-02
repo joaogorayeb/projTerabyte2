@@ -50,7 +50,7 @@ public class ProdutoControle {
         return new ResponseEntity<ProdutoModelo>(produtoDAO.save(produtoModelo), HttpStatus.ACCEPTED);
     }
     
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void remover(@PathVariable Integer id){
         produtoDAO.deleteById(id);
     }

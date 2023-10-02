@@ -15,6 +15,8 @@ function listarProdutos(produtos) {
     });
 }
 
+
+
 function inserirProduto(produto) {
     var novaLinha = document.createElement("tr");
     var colId = document.createElement("td");
@@ -32,7 +34,7 @@ function inserirProduto(produto) {
     colImg.classList.add('col-img');
     colImg.appendChild(img);
 
-
+    
     colDescricao.classList.add('col-descricao');
     colDescricao.innerText = produto.descricao;
 
@@ -46,18 +48,19 @@ function inserirProduto(produto) {
         colTipo.innerText = 'Lançamentos';
     }
 
-        var btn = document.createElement("button");
-        btn.classList.add("btn", "btn-success");
+    var btn = document.createElement("button");
+    btn.classList.add("btn", "btn-success");
         btn.innerText = "Selecionar";
         colSelecionar.appendChild(btn);
-
+        
         novaLinha.appendChild(colId);
         novaLinha.appendChild(colImg);
         novaLinha.appendChild(colDescricao);
         novaLinha.appendChild(colPreco);
         novaLinha.appendChild(colTipo);
         novaLinha.appendChild(colSelecionar);
-
+        
         document.querySelector("tbody").appendChild(novaLinha);
         selecionar(btn);
-}
+    }
+    

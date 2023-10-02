@@ -1,15 +1,11 @@
 btnCancelar.addEventListener('click', function(){
-    limparCampos();
+    form.reset();
     hidden = true;
     btnHidden();
 });
-function limparCampos(){
-    inputId.value = "";
-    inputImg.value = "";
-    inputDescricao.value = "";
-    inputPreco.value = "";
-    inputTipo.value = "";
-}
+let form = document.querySelector("form"); 
+    form.reset();
+
 function btnHidden(){
     if(hidden){
         btnCadastrar.classList.toggle('visually-hidden');
