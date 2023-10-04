@@ -16,11 +16,11 @@ public class ProdutoModelo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String descricao;
     
     @Lob
-    @Column(columnDefinition = "LONGBLOB")
+    @Column(name = "img", columnDefinition = "LONGBLOB")
     private byte[] img;
     private Double preco;
     private Integer tipo;
+    private String descricao;
 }

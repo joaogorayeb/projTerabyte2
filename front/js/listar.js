@@ -1,15 +1,4 @@
-fetch(url, {
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    method: 'GET'
-})
-    .then(resposta => resposta.json())
-    .then(listaDeProdutos => listarProdutos(listaDeProdutos))
-    .catch(erro => console.log("ocorreu um erro!" + erro));
-
-
-function listarProdutos(produtos) {
+function preencherTabela(produtos) {
     produtos.forEach(produto => {
         inserirProduto(produto);
     });
@@ -39,7 +28,7 @@ function inserirProduto(produto) {
     colDescricao.innerText = produto.descricao;
 
     colPreco.classList.add('col-preco');
-    colPreco.innerText = produto.preco;
+    colPreco.innerText = "R$" + produto.preco;
 
     colTipo.classList.add("col-tipo");
     if (produto.tipo === 1) {

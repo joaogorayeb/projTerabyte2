@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="css/cadastrar.css">
     <script src="js/variaveis.js" defer></script>
     <script src="js/funcoesGlobais.js" defer></script>
+    <script src="js/get.js" defer></script>
     <script src="js/selecionar.js" defer></script>
     <script src="js/listar.js" defer></script>
-    <script src="js/cadastrar.js" defer></script>
-    <script src="js/alterar.js" defer></script>
-    <script src="js/remover.js" defer></script>
+    <script src="js/post.js" defer></script>
+    <script src="js/put.js" defer></script>
+    <script src="js/delete.js" defer></script>
     <title>Cadastrar Produtos</title>
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>
     <form enctype="multipart/form-data">
-        <input type="id" id="id" class="visually-hidden">
+        <input type="number" id="id" name="id" class="visually-hidden">
         <input type="file" id="img" name="img" class="form-control">
         <input type="text" id="descricao" name="descricao" placeholder="Descrição do Produto..." class="form-control">
         <input type="text" id="preco" name="preco" placeholder="Preço do Produto..." class="form-control">

@@ -15,7 +15,7 @@ function btnHidden(){
     }
 }
 function alerta(){
-    if(inputImg.files.length === 0 || inputDescricao.value.trim() === '' || inputPreco.value.trim() === '' ){
+    if(inputDescricao.value.trim() === '' || inputPreco.value.trim() === '' || (!inputTipoLan.checked) && (!inputTipoMais.checked)){
         alert("Todos os campos devem ser preenchidos!");
         return true;
     }
