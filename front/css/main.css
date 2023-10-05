@@ -3,6 +3,9 @@
 body{
     background-color: #ebebeb;
 }
+section{
+    margin-bottom: 5vh;
+}
 h2{
     font-size: 1em;
     margin-bottom: 5vh;
@@ -13,18 +16,19 @@ h2{
     display: flex;
     justify-content: space-between;
     gap: 5vw;
+    position: relative;
 }
 .img-pc-para-todos{
     width: 60%;
     height: 83%;
-    background-size: contain;
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
 .img-pc-para-todos span{
     position: absolute;
-    top: 100%;
+    top: 110%;
     font-weight: bold;
 }
 .div-home-office{
@@ -34,12 +38,12 @@ h2{
     background-image: url(../img/pc--gamer.png);
 }
 .div-imgs-depart{
-    margin-top: 5vh;
     width: 100%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
     gap: 0.2vw;
+    margin-top: 5vh;
 }
 .div-img-depart{
     background-color: #fff;
@@ -49,7 +53,7 @@ h2{
     background-repeat: no-repeat;
     position: relative;
     padding: 2em;
-    border-right: 4px #ebebeb solid;
+    border-right: 1px #ebebeb solid;
 }
 .div-img-depart span{
     position: absolute;
@@ -78,7 +82,7 @@ h2{
 }
 .div-produtos{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1vw;
 }
 .div-produto{
@@ -87,10 +91,10 @@ h2{
 }
 .div-img-produto{
     width: 100%;
-    height: 15vh;
+    height: 15vw;
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
     border-bottom: #ebebeb solid 1px;
 }
 
@@ -99,18 +103,18 @@ h2{
     margin-bottom: 1vw;
 }
 .p-valor, .p-parcelado{
-    font-size: .75em;
+    font-size: 0.75em;
+    color: #666;
 }
 .p-avista{
     font-size: 1.2em;
     font-weight: bold;
     color: #2aaa3e;
+    font-family: 'Open Sans', sans-serif;
 }
 .span-a-vista{
     font-size: 0.7em;
-    font-family: 'Open Sans', sans-serif;
 }
-.p-parcelado
 footer{
     height: 500px;
 }
@@ -124,24 +128,34 @@ footer{
 
 
  
-@media(max-width: 1024px){
-    main{
-        margin: 5vw 10vw; 
+@media(max-width: 1024px) {
+    main {
+        margin: 5vw 10vw;
     }
-    .img-pc-para-todos{
+
+    .img-pc-para-todos {
         width: 45%;
         height: 54%;
     }
-    .div-img-depart{
+
+    .div-img-depart {
         height: 15vw;
     }
 }
 
-@media(min-width: 1024px){
-    main{
-        margin: 3vw 20vw; 
+@media(min-width: 1024px) {
+    main {
+        margin: 3vw 20vw;
     }
-    .div-img-depart{
+
+    .div-img-depart {
         height: 12vw;
     }
+    .div-img-depart span {
+      position: absolute;
+      top: 102%;
+  }
+  .h2-mais-vendidos{
+      margin-top: 15%;
+  }
 }

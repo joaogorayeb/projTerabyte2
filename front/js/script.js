@@ -16,34 +16,34 @@ function listarProdutos(produtos){
         }  
     });
 }
-function inserirProduto(produto){
+function inserirProduto(p){
     var divProduto = document.createElement("div");
     divProduto.classList.add("div-produto");
 
 
     var img = document.createElement("img");
-    img.src = "data:img/jpg;base64," + produto.img;
+    img.src = "data:img/jpg;base64," + p.img;
     // img.alt = produto.img;
     divProduto.appendChild(img);
     
     var textoDescricao = document.createElement("produto");
     textoDescricao.classList.add("desc-produto");
-    textoDescricao.innerText = produto.descricao;
+    textoDescricao.innerText = p.descricao;
     divProduto.appendChild(textoDescricao);
 
-    var text1 = document.createElement("produto");
-    text1.classList.add("produto-valor");
-    text1.innerHTML = '<s>De: R$' + (produto.preco).toFixed(2) + 'por:</s>';
+    var text1 = document.createElement("p");
+    text1.classList.add("p-valor");
+    text1.innerHTML = '<s>De: R$' + (p.preco).toFixed(2) + 'por:</s>';
     divProduto.appendChild(text1);
 
-    var text2 = document.createElement("produto");
+    var text2 = document.createElement("p");
     text2.classList.add("p-avista");
-    text2.innerHTML = 'R$' + ((produto.preco * 0.5).toFixed(2)) + '<span class="span-a-vista"> à vista</span>' ;
+    text2.innerHTML = 'R$' + ((p.preco * 0.5).toFixed(2)) + '<span class="span-a-vista"> à vista</span>' ;
     divProduto.appendChild(text2);
 
-    var text6 = document.createElement("produto");
+    var text6 = document.createElement("p");
     text6.classList.add("p-parcelado");
-    text6.innerHTML = '12x de R$' + (produto.preco / 12).toFixed(2) + 'sem juros';
+    text6.innerHTML = '12x de R$' + (p.preco / 12).toFixed(2) + 'sem juros';
     divProduto.appendChild(text6);
 
     return divProduto;
