@@ -1,0 +1,34 @@
+body{
+    background-color: #ebebeb;
+}
+.display{
+    background-color: #fff;
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px 15px;
+    margin: 20px 230px;
+}
+.produto{
+    display: inline-flex;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.img-produto{
+    display: flex;
+    padding: 50px;
+    
+}
+.img1{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.descricao{
+    background-color: #333;
+    color: #fff;
+}
+.descricao{
+    
+}
