@@ -31,6 +31,11 @@ public class ProdutoControle {
         return produtoDAO.findAll();
     }
 
+    @GetMapping
+    public ProdutoModelo getProduto(@PathVariable Integer id){
+        return produtoDAO.findById(id).orElse(null);
+    }
+
     private byte[] imagem(Integer id){
         Optional<ProdutoModelo> produtoModelo = produtoDAO.findById(id);
         return produtoModelo.orElse(null).getImg();

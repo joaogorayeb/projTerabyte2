@@ -8,27 +8,150 @@ body{
     margin: 20px 230px;
 }
 .produto{
-    display: inline-flex;
+    display: flex;
 }
-.top{
+.cabecalho{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
 .img-produto{
     display: flex;
-    padding: 50px;
-    
-}
-.img1{
-    width: 50%;
+    padding: 20px;
+    width: 36vw;
     align-items: center;
     justify-content: center;
 }
-.descricao{
-    background-color: #333;
-    color: #fff;
+.img-grande, img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-.descricao{
-    
+.div-descricao{
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+.tituloproduto {
+    display: flex;
+    padding: 10px;
+
+}
+
+.titulo1{
+    text-decoration: none;
+    color: #e35919;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.titulo2 {
+    text-decoration: none;
+    color: #e35919;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 5px;
+}
+.titulo{
+    font: 18px "Open Sans",Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 10px;
+    color: #eee;
+}
+.social {
+    margin-top: 10px;
+    list-style-type: none;
+
+}
+
+.iconzap {
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+.iconcarta {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    padding: 0 6px;
+    margin-right: 10px;
+}
+
+.iconcoracao {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+.va1{
+    display: flex;
+    vertical-align: top;
+}
+.iconbarra{
+    font-size: 1.7em;
+    margin-left: .4em;
+    margin-right: .4em;
+}
+.infor{
+    font-size: 0.8em;
+}
+.valor{
+    color: #00a000;
+    font: 800 30px/36px "Open Sans Bold",Arial,Helvetica,sans-serif;
+    font-size: 2em;
+    text-align: left;
+    letter-spacing: -2px;
+    line-height: 35px;
+    margin-block-start: -5px;
+}
+.va2{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.cartao{
+    font-size: 1.3em;
+    margin-left: .4em;
+    margin-right: .4em;
+    line-height: 30px;
+}
+.valor2{
+    color: #ff5510;
+    display: block;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 1.5em!important;
+}
+.va2 span{
+    font: 12px/13px "Open Sans",Arial,Helvetica,sans-serif;
+    color: #eeee;
+    text-transform: none;
+    width: auto;
+    float: none;
+    text-align: left;
+}
+.btncomprar{
+    background-color: orangered;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    transition: .5s all;
+    border-radius: 5px;
+}
+.btncomprar:hover{
+    background-color: green;
+    color: whitesmoke;
 }
