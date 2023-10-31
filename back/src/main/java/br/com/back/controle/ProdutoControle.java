@@ -31,7 +31,7 @@ public class ProdutoControle {
         return produtoDAO.findAll();
     }
 
-    @GetMapping
+    @GetMapping("/produto/{id}")
     public ProdutoModelo getProduto(@PathVariable Integer id){
         return produtoDAO.findById(id).orElse(null);
     }

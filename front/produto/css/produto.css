@@ -9,6 +9,7 @@ body{
 }
 .produto{
     display: flex;
+    justify-content: center;
 }
 .cabecalho{
     display: flex;
@@ -16,13 +17,13 @@ body{
     border-bottom: 1px solid black;
 }
 .img-produto{
-    display: flex;
     padding: 20px;
     width: 36vw;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.img-grande, img{
+.img-grande,img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,9 +33,10 @@ body{
     background-color: #333;
     border-radius: 5px;
     color: #fff;
-    width: 50%;
+    width: 30%;
     padding: 10px;
     margin: 10px;
+    
 }
 .tituloproduto {
     display: flex;

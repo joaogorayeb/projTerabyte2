@@ -22,18 +22,27 @@ function inserirProduto(p){
 
 
     var img = document.createElement("img");
+    img.classList.add("div-img-produto")
     img.src = "data:img/jpg;base64," + p.img;
     // img.alt = produto.img;
     divProduto.appendChild(img);
     
+    var link = document.createElement("a");
+    link.setAttribute("href", "produto/?id=" + p.id);
+    link.setAttribute("target","_blank");
+    link.appendChild(img);
+    divProduto.appendChild(link);
+
+
     var textoDescricao = document.createElement("produto");
     textoDescricao.classList.add("desc-produto");
     textoDescricao.innerText = p.descricao;
     divProduto.appendChild(textoDescricao);
 
+
     var text1 = document.createElement("p");
     text1.classList.add("p-valor");
-    text1.innerHTML = '<s>De: R$' + (p.preco).toFixed(2) + 'por:</s>';
+    text1.innerHTML = '<s>De: R$' + (p.preco).toFixed(2) + ' por:</s>';
     divProduto.appendChild(text1);
 
     var text2 = document.createElement("p");
@@ -43,7 +52,7 @@ function inserirProduto(p){
 
     var text6 = document.createElement("p");
     text6.classList.add("p-parcelado");
-    text6.innerHTML = '12x de R$' + (p.preco / 12).toFixed(2) + 'sem juros';
+    text6.innerHTML = '12x de R$' + (p.preco / 12).toFixed(2) + ' sem juros';
     divProduto.appendChild(text6);
 
     return divProduto;
